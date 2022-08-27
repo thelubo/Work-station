@@ -1,5 +1,10 @@
-Applicant Name 1,Skill Name 01,Grade
-Josh,Learning,4
-Michael,Communication,2
-George,Problem solving,3
-Maria,Teamwork,1
+applicant name,skill name,grade
+Josh,Communication,8
+Josh,Learning,5
+Josh,Problem solving,7
+Michael,Communication,4
+Michael,Problem solving,5
+Michael,Learning,4
+Maria,Communication,3
+Maria,Learning,2
+Maria,Problem solving,0

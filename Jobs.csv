@@ -1,5 +1,10 @@
-Enterprise/Department Name,Job Name 1,Skill Name 01,Grade
-Thelubo inc,Manager,Problem solving,4
-Sony,Secretary,Communication,2
-Panasonic,Janitor,Teamwork,1
-Razer,Lead Developer,Learning,4
+job name,skill name,grade
+Manager,Problem solving,6
+Manager,Communication,6
+Manager,Learning,5
+Secretary,Communication,2
+Secretary,Learning,2
+Secretary,Problem solving,0
+Lead Developer,Communication,4
+Lead Developer,Problem solving,4
+Lead Developer,Learning,4

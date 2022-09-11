@@ -148,20 +148,22 @@ if uploaded_file:
     st.write(data)
     
 matrix_app = np.matrix(my_df_applicants)
-cost_matrix= []
-for row in matrix_app:
-    cost_row = []
-    for col in row:
-        cost_row += [sys.maxsize - col]
-    cost_matrix += [cost_row]
-    
-m = Munkres()
-indexes = m.compute(cost_matrix)
-matrix_app (matrix_app, msg='Highest profit through this matrix:')
-total = 0
-for row, column in indexes:
-    value=matrix_app[row][column]
-    total+= value
-    print('({row},{column}) -> {value}')
+print(matrix_app)
+transf = []
+for col in matrix_app:
+    cost_col =[]
+    for row in col:
+        cost_col += [np.amax(matrix_app)-col]
+    transf +=[cost_col]
+print(transf)
 
-print('total profit={total}')
+matrix_transf = np.array([[0,5,4],
+                          [3,6,4],
+                          [1,8,3]])
+
+
+row_ind,col_ind = linear_sum_assignment(matrix_transf)
+opt_ass = col_ind
+print(opt_ass)
+
+
